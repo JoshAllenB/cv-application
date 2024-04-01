@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto&display=swap");
+
+:root {
+  --primary-color: rgb(112, 85, 49);
+  --text-color: #fff;
+  --secondary-text-color: #000000;
+  --body-color: #202225;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+  background-color: #fff;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 100px;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.forms {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-family: "Roboto", sans-serif;
+}
+
+.forms h1 {
+  font-weight: 600;
+}
+
+.forms button {
+  position: relative;
+  left: 5px;
+  top: 5px;
+  width: 70px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.educInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.educationDate,
+.careerDate {
+  display: flex;
+}
+
+.educationDate input,
+.careerDate input {
+  width: 100px;
+}
+
+.educInfo h1 {
+  width: 100%;
+}
+
+.personalInfo,
+.educContainer,
+.workContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+  border-radius: 10px;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+}
+
+.dropdownMenu {
+  height: 50% !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.dropdownHeader {
+  display: flex;
+  gap: 40px;
+  font-size: 1.2rem;
+}
+
+.dropdownContent {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.dropdown-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.dropdown-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.dropdown-exit {
+  opacity: 1;
+}
+
+.dropdown-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.buttonContainer {
+  width: 210px;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttonContainer button {
+  width: 25%;
+}
+
+.inputField input {
+  height: 10px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.cvData {
+  height: 60em;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 3px 21px 0px rgba(0, 0, 0, 0.34);
+  background-color: #fff;
+
+  font-family: "EB Garamond", serif;
+  font-weight: 300;
+}
+
+.personalContainer {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+}
+
+.personalContainer h1 {
+  font-size: 2rem;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.contactInfo {
+  display: flex;
+  font-size: 1rem;
+  gap: 20px;
+}
+
+.contactIcon {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.cvContent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.educContent,
+.careerContent {
+  width: 85%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.cvDetails {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2rem;
+}
+
+.dateLocation {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  text-align: start;
+}
+
+.schoolDegree,
+.companyDetails {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 5;
+  align-items: start;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.educationEntry,
+.workEntry {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.educationContent,
+.workContent {
+  width: 50%;
+}
+
+#descriptionInput {
+  height: 40px;
+  text-align: start;
+}
+
+h2 {
+  width: 100%;
+
+  background-color: #e0eaee;
+}
